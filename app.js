@@ -12,6 +12,11 @@ app.get('/', (req, res) =>
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+app.post('/submit-apt', (req, res) =>
+{
+    res.send(`<h1>Appointment Submitted!</h1>`);
+})
+
 app.listen(PORT, () =>
 {
     console.log(`Server is running at http://localhost:${PORT}`);
