@@ -9,19 +9,21 @@
 <body>
     <h1>Appointment Scheduler</h1>
 
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname">
+    <form method="post" action="/submit-apt">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
 
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
 
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
 
-    <label for="time">Time:</label>
-    <input type="time" id="time" name="time">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
 
-    <button type="button">submit</button>
+        <button type="submit">submit</button>        
+    </form>
     
 </body>
 </html>
