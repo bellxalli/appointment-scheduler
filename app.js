@@ -14,8 +14,16 @@ app.get('/', (req, res) =>
 
 app.post('/submit-apt', (req, res) =>
 {
+    const order = {
+        fname: req.body.fname,
+        lname: req.body.lname,
+    };
     res.send(`<h1>Appointment Submitted!</h1>`);
-})
+});
+
+app.get('/admin/orders', (req, res) => {
+    res.send(orders);
+});
 
 app.listen(PORT, () =>
 {
